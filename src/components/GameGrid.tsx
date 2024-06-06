@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import useGames from "../hooks/useGames";
 
-function GameGrid() {
+const GameGrid = () => {
   const { games, error } = useGames();
 
   return (
@@ -14,6 +14,6 @@ function GameGrid() {
       </ul>
     </>
   );
-}
+};
 
 export default GameGrid;
